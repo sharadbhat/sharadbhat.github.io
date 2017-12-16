@@ -1,138 +1,196 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sharad Bhat</title>
-<meta name="description" content="">
-<meta name="author" content="">
+<!DOCTYPE HTML>
 
-<!-- Favicons
-    ================================================== -->
-<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+<html>
+	<head>
+		<title>Sharad Bhat</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/calendar.css"/>
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+		<style type="text/css">
+  		.mobileHide { display: inline; }
+  		@media only screen
+    	and (min-device-width : 320px)
+    	and (max-device-width : 480px){
+     		.mobileHide { display: none;}
+  		}
+		</style>
+	</head>
+	<body>
 
-<!-- Bootstrap -->
-<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
+					<h1 id="logo"><a href="#">Sharad Bhat</a></h1>
+					<p>Student. Developer.</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="#about" class="active">About</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#education">Education</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="https://github.com/sharadbhat" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://sharadmbhat.wordpress.com" target="_blank" class="icon fa-wordpress"><span class="label">Blog</span></a></li>
+						<li><a href="mailto:sharad.mbhat@gmail.com" target="_blank" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+				</footer>
+			</section>
 
-<!-- Stylesheet
-    ================================================== -->
-<link rel="stylesheet" type="text/css"  href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
-<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"/>
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Main -->
+					<div id="main">
+						<!-- about -->
+							<section id="about">
+								<div class="container">
+									<header class="major">
+										<h2>Sharad Bhat</h2>
+										<p>Just an incredibly simple responsive site<br />
+										template freebie by <a href="http://html5up.net">HTML5 UP</a>.</p>
+									</header>
+									<p>Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus col. Commodo id in arcu ante lorem ipsum sed accumsan erat praesent faucibus commodo ac mi lacus. Adipiscing mi ac commodo. Vis aliquet tortor ultricies non ante erat nunc integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum.</p>
+								</div>
+							</section>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+						<!-- skills -->
+							<section id="skills">
+								<div class="container">
+									<h3>Skills</h3>
+									<p>My skills are</p>
+									<ul class="feature-icons">
+										<li class="fa-code">Write all the code</li>
+										<li class="fa-cubes">Stack small boxes</li>
+										<li class="fa-book">Read books and stuff</li>
+										<li class="fa-coffee">Drink much coffee</li>
+										<li class="fa-bolt">Lightning bolt</li>
+										<li class="fa-users">Shadow clone technique</li>
+									</ul>
+								</div>
+							</section>
 
-</head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+						<!-- education -->
+							<section id="education">
+								<div class="container">
+									<h3>Education</h3>
+									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
+									<div class="features">
+										<article>
+											<div class="inner">
+												<h4>High School [ - 2013]</h4>
+												<p>Sri Kumaran Public School, ICSE<br>Bangalore</p>
+											</div>
+										</article>
+										<article>
+											<div class="inner">
+												<h4>Pre-University [2013 - 2015]</h4>
+												<p>Sri Kumaran Children's Home PU College<br>Bangalore</p>
+											</div>
+										</article>
+										<article>
+											<div class="inner">
+												<h4>University [2015 - 2019]</h4>
+												<p>PES Institute of Technology<br>Bangalore</p>
+											</div>
+										</article>
+									</div>
+								</div>
+							</section>
 
-<!-- Header -->
-<header id="header">
-  <div class="intro">
-    <div class="container">
-      <div class="row">
-        <div class="intro-text">
-          <h1>Sharad Bhat</h1>
-          <hr>
-          <p>Student • Developer</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-<!-- Navigation -->
-<div id="nav">
-  <nav class="navbar navbar-custom">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> <i class="fa fa-bars"></i> </button>
-      </div>
+							<!-- education -->
+								<section id="projects">
+									<div class="container">
+										<h3>Projects</h3>
+										<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
+										<div class="features">
+											<article>
+												<div class="inner">
+													<h4>VideoHub [2017]</h4>
+													<p>A client-server architecture video sharing platform<br><a href="https://github.com/sharadbhat/VideoHub" target="_blank" class="icon fa-github" style="font-size:24px"><span class="label">VideoHub</span></a></p>
+												</div>
+											</article>
+											<article>
+												<div class="inner">
+													<h4>Zomatopy [2017]</h4>
+													<p>A python wrapper for Zomato API.<br><a href="https://github.com/sharadbhat/Zomatopy" target="_blank" class="icon fa-github" style="font-size:24px"><span class="label">Zomatopy</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://pypi.python.org/pypi/Zomatopy" target="_blank" class="icon fa-cloud" style="font-size:24px"><span class="label">Zomatopy</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://sharadbhat.github.io/Zomatopy" class="icon fa-file" style="font-size:24px"><span class="label">Zomatopy</span></a></p>
+												</div>
+											</article>
+											<article>
+												<div class="inner">
+													<h4>Recommender Engine API [2017]</h4>
+													<p>Recommends movies of your taste based on ratings of watched movies.<br><a href="https://github.com/sharadbhat/Recommender-Engine-API" target="_blank" class="icon fa-github" style="font-size:24px"><span class="label">Recommender Engine API</span></a></p>
+												</div>
+											</article>
+											<article>
+												<div>
+													<div class="mobileHide">
+														<div class="calendar" style="width:100%;">
+															Loading contribution data.
+														</div>
+													</div>
+												</div>
+											</article>
+										</div>
+									</div>
+								</section>
 
-      <div class="collapse navbar-collapse navbar-main-collapse">
-        <ul class="nav navbar-nav">
-          <li class="hidden"> <a href="#page-top"></a> </li>
-          <li> <a class="page-scroll" href="#about">About</a> </li>
-          <li> <a class="page-scroll" href="#portfolio">Portfolio</a> </li>
-          <li> <a class="page-scroll" href="#contact">Contact</a> </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</div>
-<!-- About Section -->
-<div id="about">
-  <div class="container">
-    <div class="section-title text-center center">
-      <h2>About Me</h2>
-      <hr>
-    </div>
-    <div class="row">
-      <div class="col-md-12 text-center"><img src="img/about.jpg" class="img-responsive"></div>
-      <div class="col-md-8 col-md-offset-2">
-        <div class="about-text">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Portfolio Section -->
-<div id="portfolio">
-  <div class="container" style="width:50%;">
-    <div class="section-title text-center center">
-      <h2>Portfolio</h2>
-      <hr>
-    </div>
-    <div id="center-div">
-      <div class="github-widget" data-username="sharadbhat"></div>
-    </div>
-    <br><br>
+						<!-- contact -->
+							<section id="contact">
+								<div class="container">
+									<h3>Contact Me</h3>
+									<p>Send me an email</p>
+									<form method="post" action="http://formspree.io/sharad.mbhat@gmail.com">
+										<div class="row uniform">
+											<div class="6u 12u(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
+											<div class="6u 12u(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
+										</div>
+										<div class="row uniform">
+											<div class="12u"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
+										</div>
+										<div class="row uniform">
+											<div class="12u"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
+										</div>
+										<div class="row uniform">
+											<div class="12u">
+												<ul class="actions">
+													<li><input type="submit" class="special" value="Send Message" /></li>
+													<li><input type="reset" value="Reset Form" /></li>
+												</ul>
+											</div>
+										</div>
+									</form>
+								</div>
+							</section>
+					</div>
 
-    <div class="calendar">
-        Loading the data just for you.
-    </div>
-  </div>
-</div>
-<!-- Contact Section -->
-<div id="contact" class="text-center">
-  <div class="container">
-    <div class="section-title center">
-      <h2>Get In Touch</h2>
-      <hr>
-    </div>
-    <div class="col-md-8 col-md-offset-2">
-      <div id="map" style="width:100%;height:400px"></div>
-      <div class="social">
-        <ul>
-          <li><a href="https://github.com/sharadbhat"><i class="fa fa-github"></i></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-<div id="footer">
-  <div class="container text-center">
-    <div class="fnav">
-      <p>Sharad Bhat | 2018</p>
-    </div>
-  </div>
-</div>
-<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<script type="text/javascript" src="js/SmoothScroll.js"></script>
-<script type="text/javascript" src="js/nivo-lightbox.js"></script>
-<script type="text/javascript" src="js/jquery.isotope.js"></script>
-<script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
-<script type="text/javascript" src="js/modernizr.custom.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="js/widget.js"></script>
-<script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
-<script>new GitHubCalendar(".calendar", "sharadbhat");</script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzcwTo1YP0U6YCZHD8U6GDXi59sV0f5DQ&callback=myMap"></script>
-</body>
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>Sharad Bhat</li><li>2018</li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/calendar.js"></script>
+			<script>
+    		new GitHubCalendar(".calendar", "sharadbhat");
+			</script>
+	</body>
 </html>
