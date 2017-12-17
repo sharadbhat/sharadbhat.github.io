@@ -564,14 +564,6 @@ header .row {
 	max-width: 380px;
 	text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
 }
-.main-content .search form {
-	max-width: 360px;
-	margin: 3rem 0 1.2rem;
-}
-.main-content .search form input[type="text"] {
-	background: rgba(255, 255, 255, 0.1);
-	width: 100%;
-}
 #main-404-content footer {
 	position: absolute;
 	width: 100%;
