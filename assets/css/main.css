@@ -1143,7 +1143,7 @@ text-decoration : none;
 }
 a:hover {
 border-bottom-color : transparent;
-color : #4acaa8 !important ;
+color : #1995ad !important ;
 }
 strong, b {
 color : #777;
@@ -1263,7 +1263,7 @@ margin-top : -0.25em;
 line-height : 1.5em;
 }
 header.major h2 {
-color : #4acaa8;
+color : #1995ad;
 font-size : 3.5em;
 }
 header.major h2 + p {
@@ -1298,7 +1298,7 @@ text-decoration : none;
 width : 100%;
 }
 input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, select:focus, textarea:focus {
-border-color : #4acaa8;
+border-color : #1995ad;
 }
 .select-wrapper {
 text-decoration : none;
@@ -1378,7 +1378,7 @@ color : #ffffff;
 content : '\f00c';
 }
 input[type="checkbox"]:focus + label:before, input[type="radio"]:focus + label:before {
-border-color : #4acaa8;
+border-color : #1995ad;
 }
 input[type="checkbox"] + label:before {
 border-radius : 5px;
@@ -1525,7 +1525,7 @@ font-weight : normal;
 text-transform : none !important ;
 }
 ul.feature-icons li:before {
-background : #4acaa8;
+background : #1995ad;
 border-radius : 100%;
 color : #ffffff;
 display : block;
@@ -1715,7 +1715,7 @@ input[type="submit"].alt.icon:before, input[type="reset"].alt.icon:before, input
 color : #aaa;
 }
 input[type="submit"].special, input[type="reset"].special, input[type="button"].special, .button.special {
-background-color : #4acaa8;
+background-color : #1995ad;
 color : #ffffff !important ;
 }
 input[type="submit"].special:hover, input[type="reset"].special:hover, input[type="button"].special:hover, .button.special:hover {
@@ -1762,8 +1762,8 @@ margin-bottom : 0;
 display : flex;
 flex-direction : column;
 justify-content : space-between;
-background : #4acaa8;
-color : #d1f1e9;
+background : #1995ad;
+color : #badfe6;
 height : 100%;
 overflow-y : auto;
 position : fixed;
@@ -1779,10 +1779,10 @@ color : #ffffff;
 color : #ffffff;
 }
 #header header p {
-color : #b6e9dc;
+color : #8ccad6;
 }
 #header a {
-color : #d1f1e9;
+color : #badfe6;
 }
 #header a:hover {
 color : #ffffff !important ;
@@ -1801,7 +1801,7 @@ font-size : 1.75em;
 margin : 0;
 }
 #header > header p {
-color : #d1f1e9;
+color : #badfe6;
 font-style : italic;
 margin : 1em 0 0 0;
 }
@@ -1816,7 +1816,7 @@ width : 100%;
 margin : 0;
 }
 #header > footer .icons li a {
-color : #b6e9dc;
+color : #8ccad6;
 }
 #header > nav {
 flex-grow : 1;
@@ -1827,7 +1827,7 @@ margin : 0;
 padding : 0;
 }
 #header > nav ul li {
-border-top : 2px solid #5ccfb0;
+border-top : 2px solid #2f9fb5;
 display : block;
 padding : 0;
 }
@@ -1841,7 +1841,7 @@ text-decoration : none;
 }
 #header > nav ul li a.active {
 background : #fff;
-color : #4acaa8 !important ;
+color : #1995ad !important ;
 }
 #header > nav ul li:first-child {
 border-top : 0;
@@ -2017,7 +2017,7 @@ font-weight : normal;
 text-transform : none !important ;
 }
 #titleBar .toggle:before {
-background : #4acaa8;
+background : #1995ad;
 color : #ffffff;
 content : '\f0c9';
 display : block;
