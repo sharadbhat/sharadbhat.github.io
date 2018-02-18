@@ -54,7 +54,7 @@ body {
  */
 
 a, a:visited {
-	color: #4acaa8;
+	color: #1995ad;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -274,7 +274,7 @@ ul.disc li::before {
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
-	background: #4acaa8;
+	background: #1995ad;
 	position: absolute;
 	left: -17px;
 	top: 11px;
@@ -282,7 +282,7 @@ ul.disc li::before {
 }
 dt {
 	margin: 0;
-	color: #4acaa8;
+	color: #1995ad;
 }
 dd {
 	margin: 0 0 0 2rem;
@@ -362,7 +362,7 @@ img.pull-left {
    top: 50%;
    left: 50%;
    border-radius: 50%;
-   box-shadow: 0 4px 0 0 #4acaa8;
+   box-shadow: 0 4px 0 0 #1995ad;
    display: block;
    -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
    transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
@@ -522,7 +522,7 @@ header .row {
 .main-content h1::before {
 	content: "";
 	display: block;
-	background: #4acaa8;
+	background: #1995ad;
 	width: 120px;
 	height: 3px;
 	position: absolute;
