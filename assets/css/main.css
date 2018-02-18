@@ -1719,10 +1719,10 @@ background-color : #1995ad;
 color : #ffffff !important ;
 }
 input[type="submit"].special:hover, input[type="reset"].special:hover, input[type="button"].special:hover, .button.special:hover {
-background-color : #5ed0b1;
+background-color : #16869b;
 }
 input[type="submit"].special:active, input[type="reset"].special:active, input[type="button"].special:active, .button.special:active {
-background-color : #39c29d;
+background-color : #14778a;
 }
 input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"].disabled, input[type="reset"]:disabled, input[type="button"].disabled, input[type="button"]:disabled, .button.disabled, .button:disabled {
 background-color : #888 !important ;
