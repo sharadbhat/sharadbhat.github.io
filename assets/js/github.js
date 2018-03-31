@@ -1,9 +1,11 @@
-url1 = "https://api.github.com/repos/sharadbhat/VideoHub";
-url2 = "https://api.github.com/repos/sharadbhat/Zomatopy";
-url3 = "https://api.github.com/repos/sharadbhat/Recommender-Engine-API";
-url4 = "https://api.github.com/repos/OmkarPathak/pygorithm"
+url1 = "http://api.github.com/repos/sharadbhat/Music-Streaming-Service";
+url2 = "http://api.github.com/repos/sharadbhat/nodorithm";
+url3 = "https://api.github.com/repos/sharadbhat/VideoHub";
+url4 = "https://api.github.com/repos/sharadbhat/Zomatopy";
+url5 = "https://api.github.com/repos/sharadbhat/Recommender-Engine-API";
+url6 = "https://api.github.com/repos/OmkarPathak/pygorithm";
 
-url = [url1, url2, url3, url4];
+url = [url1, url2, url3, url4, url5, url6];
 
 var star = 'star'
 var fork = 'fork'
