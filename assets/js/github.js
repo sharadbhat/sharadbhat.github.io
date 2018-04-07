@@ -1,8 +1,8 @@
-url1 = "http://api.github.com/repos/sharadbhat/Music-Streaming-Service";
+url1 = "http://api.github.com/repos/sharadbhat/StreamIt";
 url2 = "http://api.github.com/repos/sharadbhat/nodorithm";
 url3 = "https://api.github.com/repos/sharadbhat/VideoHub";
 url4 = "https://api.github.com/repos/sharadbhat/Zomatopy";
-url5 = "https://api.github.com/repos/sharadbhat/Recommender-Engine-API";
+url5 = "https://api.github.com/repos/sharadbhat/RecommendMe";
 url6 = "https://api.github.com/repos/OmkarPathak/pygorithm";
 
 url = [url1, url2, url3, url4, url5, url6];
