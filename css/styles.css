@@ -349,6 +349,11 @@ footer {
   top: 100%;
   left: 303px;
 }
+.experience-ul {
+  margin: 0;
+  color: #74808a;
+  font-size: 0.9em;
+}
 .vtimeline-content {
   margin-left: 350px;
   background: #fff;
