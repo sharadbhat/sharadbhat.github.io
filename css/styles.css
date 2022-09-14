@@ -180,6 +180,14 @@ footer {
 .social a:hover {
   color: #3498db;
 }
+.socialTop a {
+  display: block;
+  color: #a0cfee;
+  padding: 10px;
+}
+.socialTop a:hover {
+  color: #fff;
+}
 .btn-rounded-white {
   display: inline-block;
   color: #fff;
@@ -255,6 +263,12 @@ footer {
   font-weight: 500;
   font-size: 2.25em;
   margin-bottom: 15px;
+}
+#lead-content-name {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 #lead-overlay {
   position: absolute;
@@ -728,6 +742,12 @@ footer {
   }
   .social {
     text-align: center;
+  }
+  #lead-content-name {
+    height: 100%;
+  }
+  .socialTop {
+    display: none;
   }
 }
 @media only screen and (max-width: 480px) {
