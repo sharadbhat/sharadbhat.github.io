@@ -1,0 +1,28 @@
+.list-block {
+  display: grid;
+  gap: 0.7rem;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list-block__item {
+  position: relative;
+  padding-left: 1.35rem;
+  color: rgb(248 245 255 / 0.8);
+  font-size: clamp(0.98rem, 1.7vw, 1.08rem);
+  line-height: 1.55;
+}
+
+.list-block__item::before {
+  content: "";
+  position: absolute;
+  top: 0.72em;
+  left: 0;
+  width: 0.42rem;
+  height: 0.42rem;
+  border-radius: 999px;
+  background: rgb(255 159 252 / 0.72);
+  box-shadow: 0 0 18px rgb(82 39 255 / 0.55);
+}

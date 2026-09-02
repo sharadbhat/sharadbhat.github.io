@@ -1,0 +1,163 @@
+.portfolio-chat {
+  position: fixed;
+  left: 50%;
+  bottom: clamp(1rem, 3vw, 2rem);
+  z-index: 2;
+  width: min(calc(100% - 2rem), 760px);
+  transform: translateX(-50%);
+}
+
+.portfolio-chat__panel {
+  display: grid;
+  gap: 0;
+  border: 1px solid rgb(248 245 255 / 0.13);
+  border-radius: 1.5rem;
+  background:
+    linear-gradient(135deg, rgb(82 39 255 / 0.08), rgb(255 159 252 / 0.035)),
+    rgb(9 8 15 / 0.32);
+  box-shadow:
+    0 18px 70px rgb(0 0 0 / 0.38),
+    0 0 28px rgb(255 159 252 / 0.035),
+    inset 0 1px 0 rgb(255 255 255 / 0.16),
+    inset 0 -1px 0 rgb(82 39 255 / 0.055);
+  backdrop-filter: blur(22px) saturate(155%);
+  -webkit-backdrop-filter: blur(22px) saturate(155%);
+  overflow: hidden;
+  transition:
+    border-color 180ms ease,
+    background-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.portfolio-chat__panel:focus-within {
+  border-color: rgb(255 159 252 / 0.28);
+  background:
+    linear-gradient(135deg, rgb(82 39 255 / 0.1), rgb(255 159 252 / 0.055)),
+    rgb(10 9 17 / 0.36);
+  box-shadow:
+    0 22px 90px rgb(0 0 0 / 0.46),
+    0 0 40px rgb(255 159 252 / 0.065),
+    inset 0 1px 0 rgb(255 255 255 / 0.2),
+    inset 0 -1px 0 rgb(82 39 255 / 0.08);
+}
+
+.portfolio-chat__suggestions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 0;
+  padding: 0 0.8rem;
+  opacity: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  scrollbar-width: thin;
+  transform: translateY(0.5rem);
+  transition:
+    max-height 180ms ease,
+    opacity 180ms ease,
+    padding 180ms ease,
+    transform 180ms ease;
+}
+
+.portfolio-chat__panel--open .portfolio-chat__suggestions {
+  max-height: 6.25rem;
+  padding: 0.8rem 0.8rem 0.45rem;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.portfolio-chat__suggestion-row {
+  display: flex;
+  gap: 0.5rem;
+  width: max-content;
+}
+
+.portfolio-chat__suggestion {
+  flex: 0 0 auto;
+  border: 1px solid rgb(248 245 255 / 0.12);
+  border-radius: 999px;
+  padding: 0.55rem 0.8rem;
+  color: rgb(248 245 255 / 0.82);
+  background: rgb(248 245 255 / 0.045);
+  font: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition:
+    border-color 150ms ease,
+    color 150ms ease,
+    background-color 150ms ease;
+}
+
+.portfolio-chat__suggestion:hover,
+.portfolio-chat__suggestion:focus-visible {
+  border-color: rgb(255 159 252 / 0.28);
+  color: #fff;
+  background: rgb(255 159 252 / 0.075);
+  outline: none;
+}
+
+.portfolio-chat__form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  gap: 0.75rem;
+  padding: 0.75rem;
+}
+
+.portfolio-chat__input {
+  min-height: 2.75rem;
+  max-height: 9rem;
+  width: 100%;
+  resize: none;
+  border: 0;
+  padding: 0.7rem 0.55rem;
+  color: #fff;
+  background: transparent;
+  font: inherit;
+  font-size: 1rem;
+  line-height: 1.4;
+  outline: none;
+}
+
+.portfolio-chat__input::placeholder {
+  color: rgb(248 245 255 / 0.56);
+}
+
+.portfolio-chat__submit {
+  min-width: 3.8rem;
+  min-height: 2.75rem;
+  border: 1px solid rgb(248 245 255 / 0.16);
+  border-radius: 1rem;
+  color: #fff;
+  background: rgb(248 245 255 / 0.07);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 150ms ease,
+    border-color 150ms ease,
+    opacity 150ms ease;
+}
+
+.portfolio-chat__submit:hover,
+.portfolio-chat__submit:focus-visible {
+  border-color: rgb(255 159 252 / 0.34);
+  background: rgb(255 159 252 / 0.09);
+  outline: none;
+}
+
+.portfolio-chat__submit:disabled {
+  cursor: default;
+  opacity: 0.42;
+}
+
+@media (max-width: 560px) {
+  .portfolio-chat__form {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-chat__submit {
+    width: 100%;
+  }
+}

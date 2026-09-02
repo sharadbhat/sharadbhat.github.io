@@ -1,0 +1,57 @@
+.chat-response {
+  position: fixed;
+  inset: clamp(10.5rem, 20vh, 12rem) 1rem clamp(12rem, 22vh, 14rem);
+  z-index: 1;
+  display: grid;
+  align-items: stretch;
+  justify-items: center;
+  transform: translateY(0.75rem);
+  animation: chat-response-settle 520ms 320ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  pointer-events: none;
+}
+
+.chat-response__inner {
+  width: min(100%, 820px);
+  height: 100%;
+  max-height: 100%;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-gutter: stable;
+  border: 1px solid rgb(248 245 255 / 0.13);
+  border-radius: 1.25rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  color: #f8f5ff;
+  background:
+    linear-gradient(135deg, rgb(82 39 255 / 0.08), rgb(255 159 252 / 0.045)),
+    rgb(9 8 15 / 0.36);
+  box-shadow:
+    0 18px 70px rgb(0 0 0 / 0.36),
+    inset 0 1px 0 rgb(255 255 255 / 0.16);
+  backdrop-filter: blur(22px) saturate(150%);
+  -webkit-backdrop-filter: blur(22px) saturate(150%);
+  pointer-events: auto;
+}
+
+.chat-response__content {
+  opacity: 0;
+  animation: chat-response-content-enter 420ms 320ms ease forwards;
+}
+
+.chat-response__content--loading {
+  display: grid;
+  height: 100%;
+  min-height: 100%;
+}
+
+@keyframes chat-response-settle {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes chat-response-content-enter {
+  to {
+    opacity: 1;
+  }
+}

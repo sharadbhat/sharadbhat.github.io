@@ -1,0 +1,19 @@
+.loading-response {
+  display: grid;
+  height: 100%;
+  min-height: 100%;
+  place-items: center;
+  text-align: center;
+  color: rgb(248 245 255 / 0.76);
+}
+
+.loading-response__text {
+  margin: 0;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.loading-response__text .text-type__cursor {
+  color: rgb(255 159 252 / 0.82);
+}
