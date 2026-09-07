@@ -22,7 +22,7 @@ export function ChatResponse({
         <div
           className={`chat-response__content ${
             isLoading ? "chat-response__content--loading" : ""
-          }`.trim()}
+          } ${!isLoading && blocks.length === 1 && blocks[0].type === "error" ? "chat-response__content--error" : ""}`.trim()}
         >
           {isLoading ? <LoadingResponse /> : null}
           {!isLoading && blocks.length > 0 ? <ResponseRenderer blocks={blocks} /> : null}

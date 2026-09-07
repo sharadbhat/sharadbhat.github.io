@@ -4,3 +4,37 @@
   overflow: hidden;
   background: #000;
 }
+
+@media (min-width: 621px) {
+  .app {
+    height: 100svh;
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) auto;
+    gap: 1rem;
+    padding: clamp(10.5rem, 20vh, 12rem) 1rem clamp(1rem, 3vw, 2rem);
+  }
+}
+
+@media (max-width: 620px) {
+  .app {
+    position: fixed;
+    top: var(--viewport-top, 0px);
+    left: 0;
+    width: 100%;
+    height: var(--viewport-height, 100dvh);
+    min-height: 0;
+    display: grid;
+    grid-template-rows: minmax(108px, 1fr) minmax(0, 0fr) auto;
+    gap: 12px;
+    padding: max(16px, env(safe-area-inset-top)) 16px max(12px, env(safe-area-inset-bottom));
+    transition: grid-template-rows 700ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .app--chat-active {
+    grid-template-rows: minmax(108px, 0fr) minmax(0, 1fr) auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .app { transition: none; }
+}

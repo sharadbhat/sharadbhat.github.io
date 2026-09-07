@@ -11,11 +11,11 @@ export function PortfolioBackground() {
         speed={0.15}
         sweepSpeed={0.2}
         sweepWidth={1.6}
-        sweepFalloff={3}
+        sweepFalloff={1}
         scale={1.5}
         frequency={2}
         ripple={0.22}
-        bandDensity={11}
+        bandDensity={7}
         lineSharpness={5}
         glow={0.22}
         scanDirection="vertical"

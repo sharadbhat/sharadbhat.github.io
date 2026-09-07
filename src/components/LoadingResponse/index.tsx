@@ -9,6 +9,18 @@ const loadingPhrases = [
   "Negotiating with the context window...",
   "Finding the least boring answer...",
   "Polishing the humblebrag...",
+  "Searching for the perfect quote...",
+  "Searching for the most impressive answer...",
+  "Begging the AI for a better answer...",
+  "Pretending to think deeply...",
+  "Over-analyzing your prompt...",
+  "Drafting, deleting, and redrafting...",
+  "Trying not to hallucinate a fake framework...",
+  "Arguing with its own neural nodes...",
+  "Second-guessing its first response...",
+  "Staring at the prompt in mild panic...",
+  "Hoping you don't ask a follow-up question...",
+  "Wondering if this answer makes it look smart...",
 ];
 
 function shufflePhrases(phrases: string[]) {

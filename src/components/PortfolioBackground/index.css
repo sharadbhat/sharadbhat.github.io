@@ -5,4 +5,14 @@
   pointer-events: none;
   background: #000;
   overflow: hidden;
+  opacity: 0.8;
+  transition: opacity 800ms ease;
+}
+
+@media (max-width: 620px) {
+  .portfolio-background { opacity: 0.6; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-background { transition: none; }
 }

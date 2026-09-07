@@ -1,19 +1,22 @@
 import { useRef, useState, type FocusEvent } from "react";
+import { IconArrowUp, IconLoader2 } from "@tabler/icons-react";
 import { chatApiUrl } from "../../config/backend";
 import type { ChatApiResponse, ChatResponseBlock } from "../../types/chat";
 import "./index.css";
 
 const suggestedQuestions = [
-  "What projects have you worked on?",
-  "What are you best at?",
-  "How can I contact you?",
-  "What is your educational background?",
-  "What are your hobbies?",
+  "What have you built?",
+  "Your strongest skills?",
+  "What projects have you done at Adobe?",
+  "Any open-source projects?",
+  "What are you building with AI?",
+  "How can I reach you?",
+  "Where did you study?",
 ];
 
 const questionRows = [
-  suggestedQuestions.slice(0, Math.ceil(suggestedQuestions.length / 2)),
-  suggestedQuestions.slice(Math.ceil(suggestedQuestions.length / 2)),
+  suggestedQuestions.slice(0, Math.floor(suggestedQuestions.length / 2)),
+  suggestedQuestions.slice(Math.floor(suggestedQuestions.length / 2)),
 ];
 
 const fallbackErrorBlocks: ChatResponseBlock[] = [{ type: "error" }];
@@ -23,7 +26,10 @@ type PortfolioChatProps = {
   onResponse?: (blocks: ChatResponseBlock[]) => void;
 };
 
-export function PortfolioChat({ onQuestionAsked, onResponse }: PortfolioChatProps) {
+export function PortfolioChat({
+  onQuestionAsked,
+  onResponse,
+}: PortfolioChatProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [message, setMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -44,6 +50,7 @@ export function PortfolioChat({ onQuestionAsked, onResponse }: PortfolioChatProp
     if (!question || isSubmitting) return;
 
     setIsSubmitting(true);
+    inputRef.current?.blur();
     setMessage("");
     setIsOpen(false);
     onQuestionAsked?.();
@@ -62,7 +69,9 @@ export function PortfolioChat({ onQuestionAsked, onResponse }: PortfolioChatProp
       }
 
       const data = (await response.json()) as Partial<ChatApiResponse>;
-      onResponse?.(Array.isArray(data.blocks) ? data.blocks : fallbackErrorBlocks);
+      onResponse?.(
+        Array.isArray(data.blocks) ? data.blocks : fallbackErrorBlocks,
+      );
     } catch {
       onResponse?.(fallbackErrorBlocks);
     } finally {
@@ -77,7 +86,11 @@ export function PortfolioChat({ onQuestionAsked, onResponse }: PortfolioChatProp
         onBlur={handleBlur}
         onFocus={() => setIsOpen(true)}
       >
-        <div className="portfolio-chat__suggestions">
+        <div
+          className="portfolio-chat__suggestions"
+          inert={!isOpen}
+          aria-hidden={!isOpen}
+        >
           {questionRows.map((questions, index) => (
             <div className="portfolio-chat__suggestion-row" key={index}>
               {questions.map((question) => (
@@ -104,14 +117,20 @@ export function PortfolioChat({ onQuestionAsked, onResponse }: PortfolioChatProp
           <textarea
             ref={inputRef}
             className="portfolio-chat__input"
-            placeholder="Ask me anything"
+            placeholder="Ask me something..."
+            aria-label="Ask a question about Sharad"
             rows={1}
             value={message}
             onChange={(event) => {
               setMessage(event.target.value);
             }}
             onKeyDown={(event) => {
-              if (event.key !== "Enter" || event.shiftKey) return;
+              if (
+                event.key !== "Enter" ||
+                event.shiftKey ||
+                event.nativeEvent.isComposing
+              )
+                return;
 
               event.preventDefault();
               void submitQuestion();
@@ -121,8 +140,18 @@ export function PortfolioChat({ onQuestionAsked, onResponse }: PortfolioChatProp
             className="portfolio-chat__submit"
             disabled={!message.trim() || isSubmitting}
             type="submit"
+            aria-label={isSubmitting ? "Sending question" : "Send question"}
+            title={isSubmitting ? "Sending question" : "Send question"}
           >
-            {isSubmitting ? "Sending" : "Send"}
+            {isSubmitting ? (
+              <IconLoader2
+                className="portfolio-chat__spinner"
+                size={20}
+                aria-hidden="true"
+              />
+            ) : (
+              <IconArrowUp size={20} stroke={2.2} aria-hidden="true" />
+            )}
           </button>
         </form>
       </div>

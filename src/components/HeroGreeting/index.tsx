@@ -72,7 +72,7 @@ export function HeroGreeting({ isCompact = false }: HeroGreetingProps) {
               <AnimatePresence mode="popLayout" initial={false}>
                 {!showCompactTitle ? (
                   <motion.span
-                    className="hero-greeting__title-piece"
+                    className="hero-greeting__title-piece hero-greeting__title-prefix"
                     key="intro-prefix"
                     initial={{ opacity: 0, x: -18, filter: "blur(8px)" }}
                     animate={{ opacity: 1, x: 0, filter: "blur(0px)" }}
@@ -123,6 +123,7 @@ export function HeroGreeting({ isCompact = false }: HeroGreetingProps) {
                   href={button.href}
                   key={button.label}
                   download
+                  title={button.label}
                 >
                   <span className="hero-greeting__link-icon">
                     <Icon size={22} />
@@ -141,6 +142,7 @@ export function HeroGreeting({ isCompact = false }: HeroGreetingProps) {
                 key={button.label}
                 target="_blank"
                 rel="noopener noreferrer"
+                title={button.label}
               >
                 <span className="hero-greeting__link-icon">
                   <Icon size={22} />

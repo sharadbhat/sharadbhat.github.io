@@ -1,5 +1,6 @@
 .response-renderer {
   display: grid;
   justify-items: stretch;
-  gap: 1.15rem;
+  gap: 1.5rem;
+  overflow-wrap: anywhere;
 }

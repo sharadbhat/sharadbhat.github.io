@@ -2,12 +2,11 @@
   display: grid;
   gap: 1rem;
   width: 100%;
-  border: 1px solid rgb(248 245 255 / 0.12);
-  border-radius: 1rem;
-  padding: clamp(1rem, 2.5vw, 1.25rem);
-  background: rgb(248 245 255 / 0.045);
-  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.08);
+  padding: 0 0 24px;
+  border-bottom: 1px solid rgb(248 245 255 / 0.1);
 }
+
+.project-block:last-child { padding-bottom: 0; border-bottom: 0; }
 
 .project-block__copy {
   display: grid;
@@ -17,7 +16,7 @@
 .project-block__title {
   margin: 0;
   color: #f8f5ff;
-  font-size: clamp(1.08rem, 2vw, 1.35rem);
+  font-size: 1.125rem;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -25,7 +24,7 @@
 .project-block__description {
   margin: 0;
   color: rgb(248 245 255 / 0.75);
-  font-size: clamp(0.96rem, 1.7vw, 1.05rem);
+  font-size: 1rem;
   line-height: 1.58;
 }
 
@@ -39,13 +38,13 @@
 }
 
 .project-block__tag {
-  border: 1px solid rgb(255 159 252 / 0.13);
-  border-radius: 999px;
-  padding: 0.35rem 0.65rem;
+  border: 0;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
   color: rgb(248 245 255 / 0.76);
-  background: rgb(82 39 255 / 0.075);
-  font-size: 0.82rem;
-  font-weight: 600;
+  background: rgb(255 255 255 / 0.045);
+  font-size: 0.75rem;
+  font-weight: 500;
 }
 
 .project-block__links {
@@ -56,10 +55,10 @@
 
 .project-block__link {
   display: inline-grid;
-  min-height: 2.35rem;
+  min-height: 44px;
   place-items: center;
   border: 1px solid rgb(248 245 255 / 0.16);
-  border-radius: 999px;
+  border-radius: 8px;
   padding: 0 0.9rem;
   color: #fff;
   background: rgb(248 245 255 / 0.065);
